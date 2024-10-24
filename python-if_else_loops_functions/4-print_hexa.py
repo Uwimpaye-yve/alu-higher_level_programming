@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for n in range(98 + 1):
-    print("{} = {}".format(n, hex(n)))
+print("{}".format("".join(
+    "{:d} = 0x{:x}\n".format(i, i) for i in range(99)
+)), end="")
