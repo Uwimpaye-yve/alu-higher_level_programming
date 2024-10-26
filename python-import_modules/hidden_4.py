@@ -1,3 +1,4 @@
+# Visible functions and variables
 def my_secret_santa():
     pass
 
@@ -10,12 +11,13 @@ def print_school():
 def test_betty():
     pass
 
-def _hidden_function():
+# Variables
+var1 = 1
+_var2 = 2
+var4 = 4
+
+# Hidden function and variable (these start with __ and won’t be printed)
+def __hidden_function():
     pass
 
-def visible_function():
-    pass
-
-var1 = "variable one"
-_var2 = "variable two"
-var4 = "variable four"
+__hidden_variable = "Hidden"
