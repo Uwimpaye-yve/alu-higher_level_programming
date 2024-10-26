@@ -1,12 +1,21 @@
-# hidden_4.py
+def my_secret_santa():
+    pass
 
-var1 = "This is a visible variable"
-_var2 = "This is a hidden variable"
-__var3 = "Another hidden variable"
-var4 = "Another visible variable"
+def print_hidden():
+    pass
 
-def visible_function():
-    return "This function is visible"
+def print_school():
+    pass
+
+def test_betty():
+    pass
 
 def _hidden_function():
-    return "This function is hidden"
+    pass
+
+def visible_function():
+    pass
+
+var1 = "variable one"
+_var2 = "variable two"
+var4 = "variable four"
