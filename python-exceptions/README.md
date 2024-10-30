@@ -1,0 +1,1 @@
+This is python project on exceptions and errors
