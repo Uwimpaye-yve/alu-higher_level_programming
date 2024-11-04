@@ -1,0 +1,1 @@
+This is python projects that shows more of how to use class, objects,attributes and methods
