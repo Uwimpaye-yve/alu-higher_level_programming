@@ -1,0 +1,1 @@
+This is python project of input and output
