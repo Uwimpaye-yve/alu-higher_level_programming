@@ -1,0 +1,1 @@
+Object, scope and closure javascript project
