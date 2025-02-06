@@ -1,19 +1,15 @@
 #!/usr/bin/node
-
 const request = require('request');
-const api = process.argv[2];
 
-request(api, (err, response, body) => {
-  if (!error) {
-    let number = 0;
-    const data = JSON.parse(body);
-    data.results.forEach(function (movies) {
-      movies.characters.forEach(function (character) {
-        if (character.search('/18/') !== -1) {
-          count++;
-        }
-      });
-    });
-    console.log(count);
+request(process.argv[2], function (err, res, body) {
+  if (!err) {
+    const results = JSON.parse(body).results;
+    console.log(
+      results.reduce((count, film) => {
+        return film.characters.find((character) => character.endsWith('/18/'))
+          ? count + 1
+          : count;
+      }, 0)
+    );
   }
 });
